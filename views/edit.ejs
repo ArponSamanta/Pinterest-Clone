@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Section</title>
+    <link rel="stylesheet" href="/stylesheets/edit.css">
+</head>
+<body>
+    <header>
+        <div class="header-parent">
+            <h3 style="color: #eb2225; margin: 10px;">Pinterest</h3>
+            <div class="header-child">
+                <a style="color: #eb2225;" href="/profile">Profile</a><a style="color: #eb2225;" href="/feed">Feed</a><a style="color: black;" class="logout" href="/logout">Logout</a>
+            </div>
+        </div>
+    </header>
+    <div style="width:100%; height: 100%; padding: 5px 10px;">
+        <h1>Edit Your Details</h1>
+        <hr style="opacity: 1;margin-top: 1%; margin-right: 10%;">
+        <form action="/details" method="post">
+            <input type="text" placeholder="Tagline" class="block" style="padding-left: 1%;" name="tagLine">
+            <textarea type="text" placeholder="Description" class="block" style="padding-left: 1%; height: 150px;" name="desCription"></textarea> 
+            <input type="submit" placeholder="Submit" class="block" style="background-color: #eb2225;">
+        </form>
+    </div>
+</body>
+</html>
