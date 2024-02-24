@@ -4,7 +4,7 @@ const path= require("path");
 
 const storage = multerDP.diskStorage({
     destination: function (req, file, cb) {
-      cb(null, 'public/images/profilepics/')
+      cb(null, process.env.UPLOAD_DESTINATION || 'public/images/uploads/')
     },
     filename: function (req, file, cb) {
       const uniquename=uuidv4();
