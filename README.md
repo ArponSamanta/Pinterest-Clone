@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a full-stack Pinterest clone that allows users to discover and save ideas for various topics. Users can create posts, add profile picture, tagline, description and explore a visually appealing collection of images. The application is built using modern web technologies and is deployed to provide a seamless experience.
+This project is a full-stack Pinterest clone that allows users to discover and upload images. Users can create posts, add profile picture, tagline, description and explore a visually appealing collection of images. The application is built using modern web technologies and is deployed to provide a seamless experience.
 
 ## Features
 
