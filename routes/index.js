@@ -4,7 +4,14 @@ const usermodel=require('./users');
 const postmodel=require('./posts');
 const passport = require('passport');
 const localStrategy=require('passport-local');
-const upload = require("./multer");
+// const upload = require("./multer");
+
+
+const multer  = require('multer');
+const { storage } = require("../cloudeConfig.js");
+const upload = multer({ storage });
+
+
 const profilePicUpload=require("./multerDP");
 passport.use(new localStrategy (usermodel.authenticate()));
 
