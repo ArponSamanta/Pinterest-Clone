@@ -19,7 +19,7 @@ This project is a full-stack Pinterest clone that allows users to discover and s
 - **Deployment**: The application is deployed using a cloud platform render and MongoDB Atlas for the database.
 
 ## Link
-#https://pinterest-clone-7wuq.onrender.com
+-> https://pinterest-clone-7wuq.onrender.com
 
 <a href="https://freeimage.host/i/JGWynB1"><img src="https://iili.io/JGWynB1.md.png" alt="JGWynB1.md.png" border="0"></a>
 
