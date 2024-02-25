@@ -31,8 +31,8 @@
    <div class="container">
          <% allPosts.forEach(function(elem){ %>
           <div class="box">
-                          <a href="/images/uploads/<%= elem.image %>" >
-                          <img src="/images/uploads/<%= elem.image %>" alt="image"></a>
+                          <a href=<%= elem.image %> >
+                          <img src=<%= elem.image %> alt="image"></a>
                       <div class="caption"><%= elem.caption %> </div>
             </div>
          <% }) %>
