@@ -4,15 +4,14 @@ const usermodel=require('./users');
 const postmodel=require('./posts');
 const passport = require('passport');
 const localStrategy=require('passport-local');
-// const upload = require("./multer");
+const multer = require("multer");
 
 
-const multer  = require('multer');
-const { storage } = require("../cloudeConfig.js");
+const { cloudinary,storage } = require("../cloudeConfig.js");
 const upload = multer({ storage });
 
+const profilePicUpload=multer ({ storage })
 
-const profilePicUpload=require("./multerDP");
 passport.use(new localStrategy (usermodel.authenticate()));
 
 /* GET home page. */
@@ -36,9 +35,12 @@ router.post('/upload',isLoggedIn, upload.single("file"), async function(req, res
     return res.status(400).send("No files were uploaded");
   }
   const user=await usermodel.findOne({username:req.session.passport.user})
+  const cloudinaryResult = await cloudinary.uploader.upload(req.file.path, {
+    folder: 'Pinterest-Clone', 
+  });
   const post= await postmodel.create({
     caption:req.body.imageCaption,
-    image:req.file.filename,
+    image:cloudinaryResult.secure_url,
     user:user._id
   });
 
@@ -49,7 +51,10 @@ router.post('/upload',isLoggedIn, upload.single("file"), async function(req, res
 
 router.post('/dpupload',isLoggedIn,profilePicUpload.single("dp"),async function(req,res,next){
   const user=await usermodel.findOne({username:req.session.passport.user});
-  user.profileImage=req.file.filename;
+  const cloudinaryResult = await cloudinary.uploader.upload(req.file.path, {
+    folder: 'Pinterest-Clone', 
+  });
+  user.profileImage=cloudinaryResult.secure_url;
   await user.save();
   res.redirect('/profile');
 })

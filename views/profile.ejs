@@ -30,7 +30,7 @@
         <div class="cardpers">
             <div>
                 <div class="profile-picture">
-                    <img src="/images/profilePics/<%= user.profileImage %>"
+                    <img src=<%= user.profileImage %>
                         alt="Profile Picture">
                 </div>
                 <div class="pencil-parent">
@@ -54,8 +54,8 @@
         <div class="cards flex">
             <% user.posts.forEach(function(post){ %>
                 <div class="card" style="width: 18rem;">
-                    <img src="/images/uploads/<%= post.image %>"
-                        class="card-img-top" alt="...">
+                    <img src=<%= post.image %>
+                        class="card-img-top" alt="post image">
                     <div class="card-body">
                         <h5 class="card-title"><%= post.caption %></h5>
                     </div>
