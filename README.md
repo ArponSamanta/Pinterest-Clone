@@ -16,7 +16,7 @@ This project is a full-stack Pinterest clone that allows users to discover and s
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Node.js, Express.js, MongoDB
 - **Authentication**: Passport.js
-- **Deployment**: The application is deployed using a cloud platform render and MongoDB Atlas for the database.
+- **Deployment**: The application is deployed using a cloud platform render and cloudinary for image handling and MongoDB Atlas for the database.
 
 ## Link
 -> https://pinterest-clone-7wuq.onrender.com
