@@ -8,7 +8,7 @@ This project is a full-stack Pinterest clone that allows users to discover and s
 
 - **User Authentication**: Secure user authentication system to allow users to sign up, log in, and maintain personalized profiles.
 - **Post Creation**: Users can create posts to organize their profile based on different themes or categories.
-- **Pin Management**: Users can add profile picture edit tagline and description on their profiles.
+- **Profile Management**: Users can add profile picture edit tagline and description on their profiles.
 - **Feed Page**:All posts by all users is in the feed page.
 
 ## Technologies Used
@@ -20,6 +20,9 @@ This project is a full-stack Pinterest clone that allows users to discover and s
 
 ## Link
 https://pinterest-clone-7wuq.onrender.com
+
+![Example Image](https://drive.google.com/file/d/1e4rdcgzlI7gIIOlQmTTkSqdYD4aqxn9I/view?usp=sharing)
+
 
 ## Contributing
 
