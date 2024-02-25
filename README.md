@@ -21,7 +21,7 @@ This project is a full-stack Pinterest clone that allows users to discover and s
 ## Link
 https://pinterest-clone-7wuq.onrender.com
 
-<a href="https://freeimage.host/i/JGWynB1"><img src="https://iili.io/JGWynB1.th.png" alt="JGWynB1.th.png" border="0"></a>
+<a href="https://freeimage.host/i/JGWynB1"><img src="https://iili.io/JGWynB1.md.png" alt="JGWynB1.md.png" border="0"></a>
 
 
 ## Contributing
